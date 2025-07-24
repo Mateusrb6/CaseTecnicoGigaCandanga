@@ -1,0 +1,19 @@
+A cotação apresentada foi escolhida com o objetivo de montar um PC que funcione como servidor de processamento, dentro de um orçamento máximo de 18 mil reais, buscando um equilíbrio entre desempenho, confiabilidade e custo-benefício. Foi descartada a ideia de montar um servidor com hardware exclusivamente voltado para servidores, como processadores Xeon ou EPYC, devido ao alto custo dessas soluções.
+
+A escolha do processador Ryzen 9 9950X se justifica pelo seu alto desempenho, com 16 núcleos e 32 threads, frequência de até 5.7 GHz e 80 MB de cache, oferecendo capacidade computacional compatível com tarefas intensivas.
+
+A memória RAM Kingston Fury Renegade Pro, com 128 GB em quatro pentes de 32 GB DDR5 a 4800 MHz, suporta ECC, garantindo detecção e correção de erros, o que aumenta a confiabilidade da máquina em operações contínuas e críticas.
+
+O SSD Samsung 990 Pro, com 1 TB, opera com alta velocidade, sendo ideal para leitura e gravação intensiva de dados, contribuindo para o desempenho de aplicações que exigem acesso rápido a disco.
+
+A placa-mãe Asus ProArt B650 foi escolhida por ser compatível com a linha Ryzen, com suporte a DDR5 ECC e por possuir recursos avançados como rede integrada de 2.5G, suporte a NVMe, dissipadores robustos e boa durabilidade.
+
+O sistema de refrigeração é feito com o cooler Noctua NH-U12A, escolhido por oferecer excelente desempenho térmico, confiabilidade superior e fácil manutenção, evitando os riscos associados ao uso de watercoolers em servidores.
+
+A fonte de alimentação XPG Core Reactor II, com 1000 W, certificação 80 Plus Gold e modularidade, foi incluída para garantir estabilidade energética, eficiência e suporte a upgrades futuros.
+
+Foram incluídas duas placas de rede Intel: uma dual port X520-da2 e uma single port X520-da1, ambas com suporte a 10 Gbps, garantindo conectividade de alto desempenho, compatível com infraestruturas de rede modernas e com bom custo-benefício.
+
+A placa de vídeo RTX 5060, com 8 GB GDDR7, foi mantida na configuração por oferecer aceleração por GPU, útil em cargas de trabalho que se beneficiam de CUDA, como inteligência artificial e renderização. Trata-se de uma opção intermediária viável dentro do orçamento.
+
+Finalizando, essa escolha privilegia componentes com alta performance, boa compatibilidade e confiabilidade, sem ultrapassar o teto de investimento proposto. Foram utilizados componentes com excelente custo-benefício, voltados ao mercado entusiasta e profissional, como alternativa mais acessível e eficiente às peças específicas para servidores.

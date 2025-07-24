@@ -1,0 +1,52 @@
+network:
+  version: 2
+  renderer: networkd #define o uso do systemd-networkd como renderizador de rede
+
+  ethernets:
+    eno1:
+      dhcp4: no
+      dhcp6: no
+    enp4s0:
+      dhcp4: no
+      dhcp6: no
+    enp1s0f0:
+      dhcp4: no
+      dhcp6: no
+    enp1s0f1:
+      dhcp4: no
+      dhcp6: no
+      # dhcp desativado em todas as interfaces
+      # desativado tanto para ipv4 quanto para ipv6 para evitar conflitos
+
+  bonds:
+    bond0:
+      interfaces: [eno1, enp1s0f0]
+      addresses: [10.1.0.1/24]
+      routes:
+        - to: default
+          via: 10.1.0.0
+          table: 100 # tabela de roteamento para bond0
+      routing-policy:
+        - from: 10.1.0.0/24
+          table: 100 
+      nameservers:
+        addresses: [10.1.0.100] # servidor DNS
+      parameters:
+        mode: 802.3ad # agregação das interfaces por LACP
+        mii-monitor-interval: 100
+        lacp-rate: fast
+
+    bond1:
+      interfaces: [enp4s0, enp1s0f1]
+      addresses: [10.2.0.1/24]
+      routes:
+        - to: default
+          via: 10.2.0.0
+          table: 200 # tabela de roteamento para bond1
+      routing-policy:
+        - from: 10.2.0.0/24
+          table: 200 
+      parameters: 
+        mode: 802.3ad # agregação das interfaces por LACP
+        mii-monitor-interval: 100
+        lacp-rate: fast
