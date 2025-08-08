@@ -1,2 +1,2 @@
-# CaseTecnicoGigaCandanga
+# Case Técnico GigaCandanga
 
