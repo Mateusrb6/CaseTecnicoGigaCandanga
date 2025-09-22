@@ -28,13 +28,13 @@ Considere o valor máximo de R$18.000,00 disponível para essa aquisição;
 ## Desafio B - Configuração de Rede do Servidor
 - Os servidores da GigaNuvem são conectados a duas redes LAN: uma de acesso e outra de clusterização. A primeira é responsável por permitir acesso às máquinas pelos técnicos para configuração e manutenção. Já a segunda é responsável por comunicar os servidores entre si, permitindo a clusterização dos nós físicos da GigaNuvem. Para tanto, esses servidores têm à disposição 4 interfaces de rede: uma onboard (disponibilizada pela placa mãe), uma single port e outra dual port. Essas interfaces são agregadas em pares, via LACP, sendo um par para cada rede LAN. Essa arquitetura garante a redundância de conexão às redes: caso uma interface falhe, a outra mantém a conectividade. A figura 1 ilustra a arquitetura detalhada.
 
-![Figura 1 - Esquemático de rede de um servidor da GigaNuvem]([github.com/](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/assets/print_desafioB.png))
+![Figura 1 - Esquemático de rede de um servidor da GigaNuvem](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/assets/print_desafioB.png)
 
 - Para este desafio, considere que um servidor da GigaNuvem foi configurado com um sistema operacional Ubuntu 22.04 que dispõe do Netplan (https://netplan.io), um software utilitário desenvolvido e mantido pela Canonical que permite a configuração de rede no Ubuntu a partir de um arquivo YAML. Para tanto, pesquise e escreva um arquivo YAML com as configurações necessárias para agregar, via LACP, um par de interfaces em cada rede proposta na figura 1 e, também, gere uma documentação com o passo a passo para aplicar, via Netplan, e validar tais configurações no Ubuntu 22.04.
 
-![Tabela 2 - Agregação de Interfaces]([github.com/](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/assets/tabela2_desafioB.png))
+![Tabela 2 - Agregação de Interfaces](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/assets/tabela2_desafioB.png)
 
-![Tabela 3 - Definições para as agregações]([github.com/](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/assets/tabela3_desafioB.png))
+![Tabela 3 - Definições para as agregações](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/assets/tabela3_desafioB.png)
 
 ### Entregáveis:
 
