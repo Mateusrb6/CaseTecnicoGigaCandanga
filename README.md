@@ -24,6 +24,7 @@ Considere o valor máximo de R$18.000,00 disponível para essa aquisição;
 2) Faça o levantamento com pelo menos 3 fornecedores do mercado brasileiro.
 3) Escolha 1 das cotações e explique, brevemente, o porquê dela ser a sua escolha.
 
+![Planilha em PDF](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/desafioA/Mateus_ReisBastos_Desafio_A.pdf)
 
 ## Desafio B - Configuração de Rede do Servidor
 - Os servidores da GigaNuvem são conectados a duas redes LAN: uma de acesso e outra de clusterização. A primeira é responsável por permitir acesso às máquinas pelos técnicos para configuração e manutenção. Já a segunda é responsável por comunicar os servidores entre si, permitindo a clusterização dos nós físicos da GigaNuvem. Para tanto, esses servidores têm à disposição 4 interfaces de rede: uma onboard (disponibilizada pela placa mãe), uma single port e outra dual port. Essas interfaces são agregadas em pares, via LACP, sendo um par para cada rede LAN. Essa arquitetura garante a redundância de conexão às redes: caso uma interface falhe, a outra mantém a conectividade. A figura 1 ilustra a arquitetura detalhada.
@@ -41,6 +42,9 @@ Considere o valor máximo de R$18.000,00 disponível para essa aquisição;
 1) Arquivo YAML, destinado ao Netplan, com a configuração para as 4 interfaces de rede instaladas em um servidor Ubuntu 22.04 de acordo com a arquitetura da figura 1 e as informações das tabelas 2 e 3. Nomeie este entregável como SeuNome_SeuSobrenome_Desafio_B.yaml.
 2) Documentação com o passo a passo para aplicar as configurações do arquivo YAML via Netplan e como validar se as configurações foram aplicadas no Ubuntu 22.04. Exporte essa documentação como PDF e a nomeie como SeuNome_SeuSobrenome_Desafio_B.pdf;
 
+![Arquivo YAML](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/desafioB/Mateus_ReisBastos_Desafio_B.yaml)
+![Documentação em PDF](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/desafioB/Mateus_ReisBastos_Desafio_B.pdf)
+
 ## Desafio C - Automação de Processos
 
 - No cotidiano dos colaboradores de TIC existem diversos problemas que podem ser automatizados ou ao menos facilitados, como por exemplo, o processo de configuração das interfaces de rede de um servidor, assim como proposto no desafio anterior. Para esse desafio, tome como base a documentação gerada no DESAFIO B e programe um script, na linguagem de programação da sua escolha, que automatize os procedimentos de configuração, aplicação e teste das interfaces de rede de um servidor Ubuntu 22.04.
@@ -49,6 +53,9 @@ Considere o valor máximo de R$18.000,00 disponível para essa aquisição;
 1) Arquivo de texto do script programado.
 2) Readme com a documentação de como instalar e executar o programa.
 3) Compile o script e o readme em um arquivo ZIP e o nomeie como SeuNome_SeuSobrenome_Desafio_C.zip.
+
+![Arquivo de texto do script](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/desafioC/configyaml.py)
+![Readme com documentação](https://github.com/Mateusrb6/CaseTecnicoGigaCandanga/blob/main/desafioC/Mateus_ReisBastos_Desafio_C_README.md)
 
 ### Considerações:
 - O script não precisa ser 100% automatizado, ou seja, o nome das interfaces, das bonds de agregação e os endereços IPs podem ser passados como argumentos para o programa desenvolvido.
